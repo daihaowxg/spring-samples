@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_session?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  session:
+    # store-type: jdbc           # 使用 JDBC 存储
+    timeout: 30m               # Session 超时时间
+    jdbc:
+      initialize-schema: always  # 自动创建表结构
+      table-name: SPRING_SESSION # 表名前缀（可选）
