@@ -1,0 +1,6 @@
+这是一个示例文本文件，用于演示 JDK 资源访问。
+This is a sample text file for demonstrating JDK resource access.
+
+内容行 1: Hello from sample.txt
+内容行 2: 这个文件位于 classpath 的根目录
+内容行 3: 可以通过多种 JDK 方式访问此文件
