@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.spring;
+package io.github.daihaowxg.sample03_resource.resource.spring;
 
 /**
  * Spring Resource 访问综合演示

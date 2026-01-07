@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.spring;
+package io.github.daihaowxg.sample03_resource.resource.spring;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;

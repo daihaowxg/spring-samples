@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.jdk;
+package io.github.daihaowxg.sample03_resource.resource.jdk;
 
 import java.io.BufferedReader;
 import java.io.File;

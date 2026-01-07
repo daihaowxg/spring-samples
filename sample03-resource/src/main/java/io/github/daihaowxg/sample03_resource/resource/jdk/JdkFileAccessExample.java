@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.jdk;
+package io.github.daihaowxg.sample03_resource.resource.jdk;
 
 import java.io.FileInputStream;
 import java.io.InputStreamReader;

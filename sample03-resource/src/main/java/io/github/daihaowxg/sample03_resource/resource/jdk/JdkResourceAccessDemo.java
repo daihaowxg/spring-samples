@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.jdk;
+package io.github.daihaowxg.sample03_resource.resource.jdk;
 
 /**
  * JDK 资源访问综合演示
