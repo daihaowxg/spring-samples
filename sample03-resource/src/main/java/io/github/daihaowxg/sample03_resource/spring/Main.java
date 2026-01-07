@@ -9,7 +9,7 @@ package io.github.daihaowxg.sample03_resource.spring;
  * 2. 自动识别：通过 ResourceLoader 配合前缀（classpath:, file:, http:）自动选择实现。
  * 3. 使用便捷：提供了丰富的方法如 exists(), isReadable(), getFilename() 等。
  */
-public class SpringResourceAccessDemo {
+public class Main {
 
     public static void main(String[] args) {
         runAllDemonstrations();
