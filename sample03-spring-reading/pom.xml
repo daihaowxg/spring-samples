@@ -21,6 +21,7 @@
     <modules>
         <module>spring-resource</module>
         <module>spring-metadata</module>
+        <module>spring-validator</module>
         <module>spring-convert</module>
     </modules>
 
