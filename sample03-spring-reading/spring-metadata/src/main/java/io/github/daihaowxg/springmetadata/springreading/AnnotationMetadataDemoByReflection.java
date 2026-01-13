@@ -22,7 +22,9 @@ public class AnnotationMetadataDemoByReflection {
         // 获取 MyBean 类上的注解属性
         if (isComponent) {
             Map<String, Object> annotationAttributes = annotationMetadata.getAnnotationAttributes(Component.class.getName());
-            System.out.println("@Component value is " + annotationAttributes.get("value"));
+            if (annotationAttributes != null) {
+                System.out.println("@Component value is " + annotationAttributes.get("value"));
+            }
         }
     }
 }
