@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.github.daihaowxg</groupId>
-        <artifactId>spring-samples</artifactId>
+        <artifactId>sample03-spring-reading</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
-    <artifactId>sample03-spring-reading</artifactId>
     <packaging>pom</packaging>
+
+    <artifactId>spring-convert</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -19,9 +19,10 @@
     </properties>
 
     <modules>
-        <module>spring-resource</module>
-        <module>spring-metadata</module>
-        <module>spring-convert</module>
+        <module>property-editor</module>
+        <module>converter</module>
+        <module>converter-factory</module>
+        <module>generic-converter</module>
     </modules>
 
 </project>
