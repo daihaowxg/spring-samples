@@ -13,7 +13,8 @@
     <modules>
         <module>sample01-spring-session-jdbc</module>
         <module>sample02-spring-security</module>
-        <module>sample03-resource</module>
+        <module>sample03-spring-reading</module>
+        <module>sample04-spring-boot</module>
     </modules>
 
 </project>

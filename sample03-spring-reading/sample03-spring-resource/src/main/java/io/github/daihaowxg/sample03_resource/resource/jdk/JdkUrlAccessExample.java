@@ -58,7 +58,7 @@ public class JdkUrlAccessExample {
             String currentDir = System.getProperty("user.dir");
             File file = new File(currentDir, "target/classes/sample.txt");
             if (!file.exists()) {
-                file = new File(currentDir, "sample03-resource/target/classes/sample.txt");
+                file = new File(currentDir, "sample03-spring-resource/target/classes/sample.txt");
             }
 
             URL fileUrl = file.toURI().toURL();

@@ -74,7 +74,7 @@ public class JdkFileAccessExample {
         // 改进：为了支持从父目录运行，我们尝试多个可能的路径
         File file = new File("target/classes/sample.txt");
         if (!file.exists()) {
-            file = new File("sample03-resource/target/classes/sample.txt");
+            file = new File("sample03-spring-resource/target/classes/sample.txt");
         }
 
         System.out.println("尝试探测的文件路径: " + file.getAbsolutePath());
