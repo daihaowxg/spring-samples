@@ -257,7 +257,6 @@ public class MyService implements ResourceLoaderAware {
 
 > [!TIP]
 > 如果只是加载单个已知路径的资源，**优先使用 ResourceLoader**，性能更好。
-> 详细对比参见：[ResourcePatternResolver与ResourceLoader的区别](../../docs/01-spring-resource/05-ResourcePatternResolver与ResourceLoader的区别.md)
 
 ---
 
@@ -282,5 +281,4 @@ public class MyService implements ResourceLoaderAware {
 ## 📚 延伸阅读
 
 - [Spring资源访问使用手册](../../docs/01-spring-resource/02-Spring资源访问使用手册.md)
-- [ResourcePatternResolver与ResourceLoader的区别](../../docs/01-spring-resource/05-ResourcePatternResolver与ResourceLoader的区别.md)
 - [详解Ant风格路径匹配](../../docs/01-spring-resource/06-详解Ant风格路径匹配.md)

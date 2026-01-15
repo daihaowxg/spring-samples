@@ -14,7 +14,8 @@
 - [02-Spring资源访问使用手册](docs/01-spring-resource/02-Spring资源访问使用手册.md)
 - [03-URI与URL的区别](docs/01-spring-resource/03-URI与URL的区别.md)
 - [04-Spring编程式用法介绍](docs/01-spring-resource/04-Spring编程式用法介绍.md)
-- [05-ResourcePatternResolver与ResourceLoader的区别](docs/01-spring-resource/05-ResourcePatternResolver与ResourceLoader的区别.md)
+- [05-ResourceLoader接口](docs/01-spring-resource/05-ResourceLoader接口.md)
+- [05-ResourcePatternResolver技术文档](docs/01-spring-resource/05-ResourcePatternResolver技术文档.md)
 - [06-详解Ant风格路径匹配](docs/01-spring-resource/06-详解Ant风格路径匹配.md)
 - [07-Spring资源加载-DocumentLoader](docs/01-spring-resource/07-Spring资源加载-DocumentLoader.md)
 
