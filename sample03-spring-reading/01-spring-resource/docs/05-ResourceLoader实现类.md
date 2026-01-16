@@ -280,5 +280,5 @@ public class MyService implements ResourceLoaderAware {
 
 ## 📚 延伸阅读
 
-- [Resource接口详解](./02-Resource接口详解.md)
-- [Ant风格路径匹配](./07-Ant风格路径匹配.md)
+- [Resource接口详解](02-Resource接口详解.md)
+- [Ant风格路径匹配](07-Ant风格路径匹配.md)

@@ -13,7 +13,7 @@
 | **03-spring-validator** | `Validator`, `DataBinder` | 数据校验与绑定体系。 |
 | **04-spring-convert** | `Converter`, `GenericConverter`, `ConversionService` | 强大的类型转换体系 (Spring 3.0+)。 |
 | **05-spring-expression** | `SpelExpressionParser` | SpEL 表达式语言，用于动态求值。 |
-| **06-spring-env** | `Environment`, `PropertySource` | 环境抽象，管理 Profile 和配置属性。 |
+| **06-spring-environment** | `Environment`, `PropertySource` | 环境抽象，管理 Profile 和配置属性。 |
 
 ## 第二阶段：IoC 容器核心 (IoC Core)
 

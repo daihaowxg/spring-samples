@@ -10,41 +10,41 @@
 
 学习 Spring 如何封装和访问各种资源（文件、URL、classpath 等）。
 
-- [01-JDK资源访问使用手册](docs/01-spring-resource/01-JDK资源访问使用手册.md)
-- [02-Spring资源访问使用手册](docs/01-spring-resource/02-Spring资源访问使用手册.md)
-- [03-URI与URL的区别](docs/01-spring-resource/03-URI与URL的区别.md)
-- [04-Spring编程式用法介绍](docs/01-spring-resource/04-Spring编程式用法介绍.md)
-- [05-ResourceLoader接口](docs/01-spring-resource/05-ResourceLoader接口.md)
-- [05-ResourcePatternResolver技术文档](docs/01-spring-resource/05-ResourcePatternResolver技术文档.md)
-- [06-详解Ant风格路径匹配](docs/01-spring-resource/06-详解Ant风格路径匹配.md)
-- [07-Spring资源加载-DocumentLoader](docs/01-spring-resource/07-Spring资源加载-DocumentLoader.md)
+- [01-JDK资源访问使用手册](01-spring-resource/01-spring-resource/01-JDK资源访问使用手册.md)
+- [02-Spring资源访问使用手册](01-spring-resource/01-spring-resource/02-Spring资源访问使用手册.md)
+- [03-URI与URL的区别](01-spring-resource/01-spring-resource/03-URI与URL的区别.md)
+- [04-Spring编程式用法介绍](01-spring-resource/01-spring-resource/04-Spring编程式用法介绍.md)
+- [05-ResourceLoader接口](01-spring-resource/01-spring-resource/05-ResourceLoader接口.md)
+- [05-ResourcePatternResolver技术文档](01-spring-resource/01-spring-resource/05-ResourcePatternResolver技术文档.md)
+- [06-详解Ant风格路径匹配](01-spring-resource/01-spring-resource/06-详解Ant风格路径匹配.md)
+- [07-Spring资源加载-DocumentLoader](01-spring-resource/01-spring-resource/07-Spring资源加载-DocumentLoader.md)
 
 ### 02 - Spring Metadata（元数据）
 
 学习 Spring 如何读取和使用类元数据，以及条件化 Bean 注册机制。
 
-- [01-MetadataReader元数据读取](docs/02-spring-metadata/01-MetadataReader元数据读取.md)
-- [02-TypeFilter组件过滤器](docs/02-spring-metadata/02-TypeFilter组件过滤器.md)
-- [03-Condition条件化Bean注册](docs/02-spring-metadata/03-Condition条件化Bean注册.md)
+- [01-MetadataReader元数据读取](02-spring-metadata/02-spring-metadata/01-MetadataReader元数据读取.md)
+- [02-TypeFilter组件过滤器](02-spring-metadata/02-spring-metadata/02-TypeFilter组件过滤器.md)
+- [03-Condition条件化Bean注册](02-spring-metadata/02-spring-metadata/03-Condition条件化Bean注册.md)
 
 ### 03 - Spring Validator（验证器）
 
 学习 Spring 的数据验证机制。
 
-- [01-Validator接口](docs/03-spring-validator/01-Validator接口.md)
+- [01-Validator接口](03-spring-validator/03-spring-validator/01-Validator接口.md)
 
 ### 04 - Spring Convert（类型转换）
 
 学习 Spring 强大的类型转换体系，从 PropertyEditor 到现代的 Converter 接口。
 
-- [01-Spring类型转换体系综述](docs/04-spring-convert/01-Spring类型转换体系综述.md)
-- [02-Spring类型处理体系分类](docs/04-spring-convert/02-Spring类型处理体系分类.md)
-- [03-PropertyEditor属性编辑器](docs/04-spring-convert/03-PropertyEditor属性编辑器.md)
-- [04-Converter类型转换器](docs/04-spring-convert/04-Converter类型转换器.md)
-- [05-ConverterFactory接口](docs/04-spring-convert/05-ConverterFactory接口.md)
-- [06-GenericConverter泛型转换器](docs/04-spring-convert/06-GenericConverter泛型转换器.md)
-- [07-ConditionalConverter条件转换器](docs/04-spring-convert/07-ConditionalConverter条件转换器.md)
-- [08-ConversionService接口](docs/04-spring-convert/08-ConversionService接口.md)
+- [01-Spring类型转换体系综述](04-spring-convert/04-spring-convert/01-Spring类型转换体系综述.md)
+- [02-Spring类型处理体系分类](04-spring-convert/04-spring-convert/02-Spring类型处理体系分类.md)
+- [03-PropertyEditor属性编辑器](04-spring-convert/04-spring-convert/03-PropertyEditor属性编辑器.md)
+- [04-Converter类型转换器](04-spring-convert/04-spring-convert/04-Converter类型转换器.md)
+- [05-ConverterFactory接口](04-spring-convert/04-spring-convert/05-ConverterFactory接口.md)
+- [06-GenericConverter泛型转换器](04-spring-convert/04-spring-convert/06-GenericConverter泛型转换器.md)
+- [07-ConditionalConverter条件转换器](04-spring-convert/04-spring-convert/07-ConditionalConverter条件转换器.md)
+- [08-ConversionService接口](04-spring-convert/04-spring-convert/08-ConversionService接口.md)
 
 ---
 
