@@ -1,4 +1,4 @@
-package io.github.daihaowxg.springvalidator.validator;
+package io.github.daihaowxg._03_spring_validator._01_validator;
 
 /**
  * 用户领域模型

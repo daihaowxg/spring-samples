@@ -1,4 +1,4 @@
-package io.github.daihaowxg.springvalidator;
+package io.github.daihaowxg._03_spring_validator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package io.github.daihaowxg.springvalidator.validator;
+package io.github.daihaowxg._03_spring_validator._01_validator;
 
 import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.validation.Errors;
@@ -12,7 +12,7 @@ import org.springframework.validation.FieldError;
  * <p>
  * 运行方式：
  * <pre>
- * mvn exec:java -Dexec.mainClass="io.github.daihaowxg.springvalidator.validator.ValidatorDemo"
+ * mvn exec:java -Dexec.mainClass="io.github.daihaowxg._03_spring_validator._01_validator.ValidatorDemo"
  * </pre>
  */
 public class ValidatorDemo {
