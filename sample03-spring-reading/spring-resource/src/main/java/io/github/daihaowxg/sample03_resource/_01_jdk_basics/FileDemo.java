@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.resource.jdk;
+package io.github.daihaowxg.sample03_resource._01_jdk_basics;
 
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -19,13 +19,9 @@ import java.io.IOException;
  * - 无法访问 JAR 包内的资源
  * - 路径依赖于操作系统和当前工作目录
  */
-public class JdkFileAccessExample {
+public class FileDemo {
 
     public static void main(String[] args) {
-        demonstrateFileAccess();
-    }
-
-    public static void demonstrateFileAccess() {
         System.out.println("\n========== 1. 使用 java.io.File 访问资源 ==========");
 
         // 示例 1: 访问绝对路径文件

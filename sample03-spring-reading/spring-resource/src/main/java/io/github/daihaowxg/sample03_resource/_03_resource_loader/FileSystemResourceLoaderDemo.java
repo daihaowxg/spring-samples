@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.resource_loader;
+package io.github.daihaowxg.sample03_resource._03_resource_loader;
 
 import org.springframework.core.io.FileSystemResourceLoader;
 import org.springframework.core.io.Resource;

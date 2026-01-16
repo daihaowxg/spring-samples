@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.resource.jdk;
+package io.github.daihaowxg.sample03_resource._01_jdk_basics;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -25,13 +25,9 @@ import java.nio.charset.StandardCharsets;
  * - 对于本地文件，需要转换为 file:// URL
  * - 错误处理相对复杂
  */
-public class JdkUrlAccessExample {
+public class UrlDemo {
 
     public static void main(String[] args) {
-        demonstrateUrlAccess();
-    }
-
-    public static void demonstrateUrlAccess() {
         System.out.println("\n========== 3. 使用 java.net.URL 访问资源 ==========");
 
         // 示例 1: 访问 file:// 协议资源

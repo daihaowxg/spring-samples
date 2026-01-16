@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.resource.jdk;
+package io.github.daihaowxg.sample03_resource._01_jdk_basics;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,13 +21,9 @@ import java.util.Properties;
  * - API 相对底层，需要手动处理流的关闭
  * - 路径规则容易混淆（是否以 / 开头）
  */
-public class JdkClassLoaderAccessExample {
+public class ClassLoaderDemo {
 
     public static void main(String[] args) {
-        demonstrateClassLoaderAccess();
-    }
-
-    public static void demonstrateClassLoaderAccess() {
         System.out.println("\n========== 2. 使用 ClassLoader 访问资源 ==========");
 
         // 示例 1: 使用 getResourceAsStream 读取文本文件
@@ -137,7 +133,7 @@ public class JdkClassLoaderAccessExample {
         System.out.println("\n--- 示例 2.4: Class.getResource vs ClassLoader.getResource ---");
 
         // ClassLoader.getResource: 路径相对于 classpath 根目录，不需要前导 /
-        ClassLoader classLoader = JdkClassLoaderAccessExample.class.getClassLoader();
+        ClassLoader classLoader = ClassLoaderDemo.class.getClassLoader();
         URL url1 = classLoader.getResource("sample.txt");
         System.out.println("ClassLoader.getResource(\"sample.txt\"): " + url1);
 
@@ -148,10 +144,10 @@ public class JdkClassLoaderAccessExample {
         // Class.getResource:
         // - 以 / 开头: 相对于 classpath 根目录
         // - 不以 / 开头: 相对于当前类所在的包
-        URL url2 = JdkClassLoaderAccessExample.class.getResource("/sample.txt");
+        URL url2 = ClassLoaderDemo.class.getResource("/sample.txt");
         System.out.println("Class.getResource(\"/sample.txt\"): " + url2);
 
-        URL url3 = JdkClassLoaderAccessExample.class.getResource("sample.txt");
+        URL url3 = ClassLoaderDemo.class.getResource("sample.txt");
         System.out.println("Class.getResource(\"sample.txt\"): " + url3);
         System.out.println("  (相对于当前包路径，所以找不到)");
 

@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.resource_loader;
+package io.github.daihaowxg.sample03_resource._03_resource_loader;
 
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -22,7 +22,7 @@ public class ResourceLoaderAwareDemo implements ResourceLoaderAware {
     private ResourceLoader resourceLoader;
 
     @Configuration
-    @ComponentScan("io.github.daihaowxg.sample03_resource.resource_loader")
+    @ComponentScan("io.github.daihaowxg.sample03_resource._03_resource_loader")
     static class Config {
     }
 

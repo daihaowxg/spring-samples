@@ -139,7 +139,7 @@ flowchart TD
 
 ### 代码范例 1：DefaultResourceLoader 基础用法
 
-> 📁 完整代码：[DefaultResourceLoaderDemo.java](../../spring-resource/src/main/java/io/github/daihaowxg/sample03_resource/resource_loader/DefaultResourceLoaderDemo.java)
+> 📁 完整代码：[DefaultResourceLoaderDemo.java](../../spring-resource/src/main/java/io/github/daihaowxg/sample03_resource/_03_resource_loader/DefaultResourceLoaderDemo.java)
 
 ```java
 import org.springframework.core.io.DefaultResourceLoader;
@@ -170,7 +170,7 @@ public class DefaultResourceLoaderDemo {
 
 ### 代码范例 2：FileSystemResourceLoader 的差异
 
-> 📁 完整代码：[FileSystemResourceLoaderDemo.java](../../spring-resource/src/main/java/io/github/daihaowxg/sample03_resource/resource_loader/FileSystemResourceLoaderDemo.java)
+> 📁 完整代码：[FileSystemResourceLoaderDemo.java](../../spring-resource/src/main/java/io/github/daihaowxg/sample03_resource/_03_resource_loader/FileSystemResourceLoaderDemo.java)
 
 ```java
 import org.springframework.core.io.FileSystemResourceLoader;
@@ -191,7 +191,7 @@ public class FileSystemResourceLoaderDemo {
 
 ### 代码范例 3：在 Spring 容器中获取 ResourceLoader
 
-> 📁 完整代码：[ResourceLoaderAwareDemo.java](../../spring-resource/src/main/java/io/github/daihaowxg/sample03_resource/resource_loader/ResourceLoaderAwareDemo.java)
+> 📁 完整代码：[ResourceLoaderAwareDemo.java](../../spring-resource/src/main/java/io/github/daihaowxg/sample03_resource/_03_resource_loader/ResourceLoaderAwareDemo.java)
 
 ```java
 import org.springframework.context.ResourceLoaderAware;
@@ -280,5 +280,5 @@ public class MyService implements ResourceLoaderAware {
 
 ## 📚 延伸阅读
 
-- [Spring资源访问使用手册](../../docs/01-spring-resource/02-Spring资源访问使用手册.md)
-- [详解Ant风格路径匹配](../../docs/01-spring-resource/06-详解Ant风格路径匹配.md)
+- [Resource接口详解](./02-Resource接口详解.md)
+- [Ant风格路径匹配](./07-Ant风格路径匹配.md)

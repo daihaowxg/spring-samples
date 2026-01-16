@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.resource_loader;
+package io.github.daihaowxg.sample03_resource._04_pattern_resolver;
 
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;

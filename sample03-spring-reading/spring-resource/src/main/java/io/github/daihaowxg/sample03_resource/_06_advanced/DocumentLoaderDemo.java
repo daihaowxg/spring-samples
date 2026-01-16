@@ -1,4 +1,4 @@
-package io.github.daihaowxg.sample03_resource.document_loader;
+package io.github.daihaowxg.sample03_resource._06_advanced;
 
 import org.springframework.beans.factory.xml.DefaultDocumentLoader;
 import org.springframework.core.io.ClassPathResource;
@@ -13,7 +13,7 @@ import org.xml.sax.helpers.DefaultHandler;
  * {@link org.springframework.beans.factory.xml.DocumentLoader} 示例
  * 展示如何编程式地使用 DefaultDocumentLoader 解析 Spring XML 配置文件
  */
-public class DocumentLoaderExample {
+public class DocumentLoaderDemo {
 
     public static void main(String[] args) {
         try {
