@@ -20,7 +20,7 @@
 
     <modules>
         <module>01-spring-resource</module>
-        <module>spring-metadata</module>
+        <module>02-spring-metadata</module>
         <module>spring-validator</module>
         <module>spring-convert</module>
     </modules>
