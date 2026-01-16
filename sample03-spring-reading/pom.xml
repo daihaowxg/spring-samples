@@ -22,7 +22,7 @@
         <module>01-spring-resource</module>
         <module>02-spring-metadata</module>
         <module>03-spring-validator</module>
-        <module>spring-convert</module>
+        <module>04-spring-convert</module>
     </modules>
 
 </project>
