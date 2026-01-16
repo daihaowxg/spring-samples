@@ -115,7 +115,7 @@ mvn compile -f <目标目录>/pom.xml
 
 使用表格或图表展示核心组件及其关系。
 
-**Mermaid 示例**（适合简单类图）：
+**Mermaid 图表示例**：
 ```mermaid
 classDiagram
     class 核心接口 {
@@ -124,20 +124,9 @@ classDiagram
     }
 ```
 
-**PlantUML 示例**（适合复杂类图/时序图）：
-```plantuml
-@startuml
-interface 核心接口 {
-    +方法1()
-    +方法2()
-}
-class 实现类 implements 核心接口
-@enduml
-```
-
 ### 工作流程
 
-用流程图或时序图展示工作流程（根据场景选择 Mermaid 或 PlantUML）。
+用 Mermaid 流程图或时序图展示工作流程。
 
 ## 💻 实战代码
 
@@ -162,19 +151,8 @@ class 实现类 implements 核心接口
 **文档要求**：
 - 文件命名：`<序号>-<概念名>.md`，如 `08-ResourceLoader接口.md`
 - 多用**表格**组织信息
-- 多用**图表**辅助理解（参考下方选择指南）
+- 多用**Mermaid图表**辅助理解（禁止使用 PlantUML）
 - 语言简洁，避免冗余
-
-**📊 图表工具选择指南**：
-
-| 场景 | 推荐工具 | 理由 |
-|-----|---------|-----|
-| 简单类图（≤5 个类） | Mermaid | 语法简洁，GitHub/VS Code 原生支持 |
-| 复杂类图（>5 个类或多层继承） | PlantUML | 布局控制更精细，支持更多 UML 特性 |
-| 简单流程图 | Mermaid | 快速绘制，可读性好 |
-| 复杂时序图（多参与者/条件分支） | PlantUML | 语法更强大，支持循环、条件等高级语法 |
-| 组件图/部署图 | PlantUML | Mermaid 支持有限 |
-| 状态机图 | 两者均可 | 根据复杂度选择 |
 
 ---
 
@@ -183,7 +161,7 @@ class 实现类 implements 核心接口
 - [ ] 代码示例已生成并放置在正确位置
 - [ ] 代码编译通过
 - [ ] 技术文档已生成并放置在正确位置
-- [ ] 文档包含表格和图表（Mermaid 或 PlantUML，根据场景选择）
+- [ ] 文档包含表格和 Mermaid 图表
 
 ---
 
