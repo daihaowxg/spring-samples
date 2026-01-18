@@ -13,4 +13,7 @@
  *
  * @see io.github.daihaowxg._04_spring_convert._04_generic_converter 下一阶段：GenericConverter (通用转换)
  */
+@NonNullApi
 package io.github.daihaowxg._04_spring_convert._03_converter_factory;
+
+import org.springframework.lang.NonNullApi;

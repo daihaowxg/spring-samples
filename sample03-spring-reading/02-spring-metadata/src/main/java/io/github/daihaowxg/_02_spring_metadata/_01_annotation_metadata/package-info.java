@@ -15,4 +15,7 @@
  *
  * @see io.github.daihaowxg._02_spring_metadata._02_metadata_reader 下一阶段：MetadataReader 统一接口
  */
+@NonNullApi
 package io.github.daihaowxg._02_spring_metadata._01_annotation_metadata;
+
+import org.springframework.lang.NonNullApi;

@@ -12,4 +12,7 @@
  * @see org.springframework.core.env.Environment
  * @see org.springframework.context.annotation.Profile
  */
+@NonNullApi
 package io.github.daihaowxg._06_spring_environment._03_profiles;
+
+import org.springframework.lang.NonNullApi;

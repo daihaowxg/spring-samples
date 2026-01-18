@@ -22,4 +22,7 @@
  * @see io.github.daihaowxg._01_spring_resource._04_pattern_resolver 上一阶段：批量加载
  * @see io.github.daihaowxg._01_spring_resource._06_advanced 下一阶段：高级主题
  */
+@NonNullApi
 package io.github.daihaowxg._01_spring_resource._05_utils;
+
+import org.springframework.lang.NonNullApi;

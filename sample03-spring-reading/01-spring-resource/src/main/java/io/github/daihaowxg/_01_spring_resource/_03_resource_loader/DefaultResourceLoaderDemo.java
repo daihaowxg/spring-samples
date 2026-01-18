@@ -3,7 +3,6 @@ package io.github.daihaowxg._01_spring_resource._03_resource_loader;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
-import org.springframework.lang.NonNull;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -40,7 +39,7 @@ public class DefaultResourceLoaderDemo {
         System.out.println();
     }
 
-    private static void loadAndDisplay(ResourceLoader loader, @NonNull String location) {
+    private static void loadAndDisplay(ResourceLoader loader, String location) {
         try {
             Resource resource = loader.getResource(location);
             System.out.printf("位置: %s%n", location);

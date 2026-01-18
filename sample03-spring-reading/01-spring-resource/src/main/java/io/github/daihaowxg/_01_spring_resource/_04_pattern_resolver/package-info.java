@@ -21,4 +21,7 @@
  *      上一阶段：ResourceLoader
  * @see io.github.daihaowxg._01_spring_resource._05_utils 下一阶段：工具类
  */
+@NonNullApi
 package io.github.daihaowxg._01_spring_resource._04_pattern_resolver;
+
+import org.springframework.lang.NonNullApi;

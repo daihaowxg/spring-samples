@@ -11,4 +11,7 @@
  *       - 演示如何注册自定义 Converter 并使用 ConversionService 进行类型转换</li>
  * </ol>
  */
+@NonNullApi
 package io.github.daihaowxg._04_spring_convert._06_conversion_service;
+
+import org.springframework.lang.NonNullApi;

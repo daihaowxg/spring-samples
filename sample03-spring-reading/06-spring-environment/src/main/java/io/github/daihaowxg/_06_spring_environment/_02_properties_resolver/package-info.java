@@ -12,4 +12,7 @@
  * @see org.springframework.core.env.PropertyResolver
  * @see org.springframework.core.env.ConfigurablePropertyResolver
  */
+@NonNullApi
 package io.github.daihaowxg._06_spring_environment._02_properties_resolver;
+
+import org.springframework.lang.NonNullApi;

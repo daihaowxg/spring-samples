@@ -12,4 +12,7 @@
  * @see org.springframework.core.env.StandardEnvironment
  * @see org.springframework.core.env.StandardServletEnvironment
  */
+@NonNullApi
 package io.github.daihaowxg._06_spring_environment._04_environment_standard;
+
+import org.springframework.lang.NonNullApi;

@@ -13,4 +13,7 @@
  *
  * @see io.github.daihaowxg._04_spring_convert._06_conversion_service 下一阶段：ConversionService (统一门面)
  */
+@NonNullApi
 package io.github.daihaowxg._04_spring_convert._05_conditional_converter;
+
+import org.springframework.lang.NonNullApi;

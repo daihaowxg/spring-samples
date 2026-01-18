@@ -13,4 +13,7 @@
  *
  * @see io.github.daihaowxg._04_spring_convert._03_converter_factory 下一阶段：ConverterFactory (工厂模式)
  */
+@NonNullApi
 package io.github.daihaowxg._04_spring_convert._02_converter;
+
+import org.springframework.lang.NonNullApi;
