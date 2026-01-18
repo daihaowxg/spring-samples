@@ -12,7 +12,4 @@
  *
  * @see io.github.daihaowxg._02_spring_metadata._04_condition 下一阶段：Condition 条件装配
  */
-@NonNullApi
 package io.github.daihaowxg._02_spring_metadata._03_type_filter;
-
-import org.springframework.lang.NonNullApi;

@@ -18,7 +18,4 @@
  *
  * @see io.github.daihaowxg._01_spring_resource._05_utils 上一阶段：工具类
  */
-@NonNullApi
 package io.github.daihaowxg._01_spring_resource._06_advanced;
-
-import org.springframework.lang.NonNullApi;

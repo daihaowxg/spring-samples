@@ -22,11 +22,7 @@
  * <li>体会 JDK 原生 API 的不统一性（这是 Spring Resource 要解决的问题）</li>
  * </ul>
  *
- * @see io.github.daihaowxg._01_spring_resource._02_resource_interface
- *      下一阶段：Spring
+ * @see io.github.daihaowxg._01_spring_resource._02_resource_interface 下一阶段：Spring
  *      Resource 接口
  */
-@NonNullApi
 package io.github.daihaowxg._01_spring_resource._01_jdk_basics;
-
-import org.springframework.lang.NonNullApi;

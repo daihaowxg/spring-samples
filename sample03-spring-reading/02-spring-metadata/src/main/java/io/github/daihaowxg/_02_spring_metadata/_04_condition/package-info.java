@@ -12,7 +12,4 @@
  *
  * @see io.github.daihaowxg._02_spring_metadata._03_type_filter 上一阶段：TypeFilter 类型过滤
  */
-@NonNullApi
 package io.github.daihaowxg._02_spring_metadata._04_condition;
-
-import org.springframework.lang.NonNullApi;

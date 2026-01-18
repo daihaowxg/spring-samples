@@ -29,7 +29,4 @@
  *      上一阶段：Resource 接口
  * @see io.github.daihaowxg._01_spring_resource._04_pattern_resolver 下一阶段：批量加载
  */
-@NonNullApi
 package io.github.daihaowxg._01_spring_resource._03_resource_loader;
-
-import org.springframework.lang.NonNullApi;

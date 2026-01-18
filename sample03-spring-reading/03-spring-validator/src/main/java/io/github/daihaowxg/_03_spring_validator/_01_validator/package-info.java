@@ -10,7 +10,4 @@
  *       - 演示 Validator 的基本使用、嵌套校验和 SmartValidator</li>
  * </ol>
  */
-@NonNullApi
 package io.github.daihaowxg._03_spring_validator._01_validator;
-
-import org.springframework.lang.NonNullApi;

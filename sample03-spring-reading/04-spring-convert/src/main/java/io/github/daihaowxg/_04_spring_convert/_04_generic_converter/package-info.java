@@ -13,7 +13,4 @@
  *
  * @see io.github.daihaowxg._04_spring_convert._05_conditional_converter 下一阶段：ConditionalConverter (条件转换)
  */
-@NonNullApi
 package io.github.daihaowxg._04_spring_convert._04_generic_converter;
-
-import org.springframework.lang.NonNullApi;

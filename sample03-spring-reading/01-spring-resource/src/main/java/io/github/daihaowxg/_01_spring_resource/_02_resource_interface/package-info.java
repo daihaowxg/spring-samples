@@ -29,7 +29,4 @@
  * @see io.github.daihaowxg._01_spring_resource._03_resource_loader
  *      下一阶段：ResourceLoader
  */
-@NonNullApi
 package io.github.daihaowxg._01_spring_resource._02_resource_interface;
-
-import org.springframework.lang.NonNullApi;

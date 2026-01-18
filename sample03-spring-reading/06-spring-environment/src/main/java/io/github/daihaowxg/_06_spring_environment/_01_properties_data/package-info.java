@@ -13,7 +13,4 @@
  * @see org.springframework.core.env.PropertySource
  * @see org.springframework.core.env.MutablePropertySources
  */
-@NonNullApi
 package io.github.daihaowxg._06_spring_environment._01_properties_data;
-
-import org.springframework.lang.NonNullApi;
