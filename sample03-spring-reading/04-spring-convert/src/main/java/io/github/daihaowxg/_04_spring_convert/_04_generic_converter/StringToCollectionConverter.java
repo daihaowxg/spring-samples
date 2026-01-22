@@ -113,7 +113,6 @@ public class StringToCollectionConverter implements ConditionalGenericConverter 
     /**
      * 根据目标类型创建对应的 Collection 实例。
      */
-    @SuppressWarnings("unchecked")
     private Collection<Object> createCollection(Class<?> collectionType, int initialCapacity) {
         if (Set.class.isAssignableFrom(collectionType)) {
             return new LinkedHashSet<>(initialCapacity);
