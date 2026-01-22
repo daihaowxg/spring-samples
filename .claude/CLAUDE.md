@@ -39,8 +39,8 @@ Spring 框架核心功能源码阅读笔记与示例代码集合
   - `04-spring-convert`：类型转换（单模块，内部文档详细讲解）
   - `06-spring-environment`：环境与属性配置（仅使用 spring-context）
 
-### 05-spring-web
-Spring Web 源码学习模块（独立模块，非 sampleXX 命名风格）
+### sample05-spring-web
+Spring Web 源码学习模块
 - Spring Boot 应用（spring-boot-starter-parent）
 - Spring Web 框架深度源码解析
 - 详细的调试指南和原理文档
@@ -94,8 +94,8 @@ mvn test -Dtest=Sample01SpringSessionApplicationTests
 # 运行单个测试方法
 mvn test -Dtest=Sample01SpringSessionApplicationTests#contextLoads
 
-# 运行 05-spring-web 模块（注意不是 sample05）
-mvn test -pl 05-spring-web
+# 运行 sample05-spring-web 模块
+mvn test -pl sample05-spring-web
 ```
 
 ### Spring Boot 应用运行
@@ -105,8 +105,8 @@ mvn test -pl 05-spring-web
 cd sample01-spring-session-jdbc
 mvn spring-boot:run
 
-# 运行 05-spring-web 模块
-cd 05-spring-web
+# 运行 sample05-spring-web 模块
+cd sample05-spring-web
 mvn spring-boot:run
 ```
 
@@ -127,12 +127,12 @@ mvn spring-boot:run
 由于 Maven 模块名称包含连字符，实际的 Java 包名会将连字符替换为下划线：
 - 模块名：`sample01-spring-session-jdbc`
 - 包名：`io.github.daihaowxg.sample01_spring_session`
-- 模块名：`05-spring-web`
+- 模块名：`sample05-spring-web`
 - 包名：`io.github.daihaowxg._05_spring_web`
 
 ## 项目结构模式
 
-### Spring Boot 应用模块（sample01, sample02, sample04, 05-spring-web）
+### Spring Boot 应用模块（sample01, sample02, sample04, sample05-spring-web）
 ```
 sampleXX-{name}/
 ├── src/
@@ -167,9 +167,9 @@ sample03-spring-reading/
 └── 06-spring-environment/          # 环境配置示例
 ```
 
-### 05-spring-web 结构
+### sample05-spring-web 结构
 ```
-05-spring-web/
+sample05-spring-web/
 ├── docs/                           # Spring Web 源码学习文档
 │   ├── Spring Web 源码学习规划.md
 │   ├── 00-Servlet基础.md
@@ -186,7 +186,7 @@ sample03-spring-reading/
 Maven 模块名使用连字符（`-`），但 Java 包名使用下划线（`_`）：
 - `sample01-spring-session-jdbc` → `sample01_spring_session`
 - `sample02-spring-security` → `sample02_spring_security`
-- `05-spring-web` → `_05_spring_web`（注意前面的下划线）
+- `sample05-spring-web` → `_05_spring_web`（注意前面的下划线）
 
 ### sample03 的特殊性
 - 大部分子模块继承 `spring-boot-starter-parent`（01-05）
@@ -194,10 +194,9 @@ Maven 模块名使用连字符（`-`），但 Java 包名使用下划线（`_`�
 - 文档采用统一编号格式（01-、02- 等）体现学习顺序
 - `04-spring-convert` 是单模块，但内部文档详细讲解了多种转换器
 
-### 05-spring-web 的特殊性
-- 独立模块，不遵循 sampleXX 命名风格
-- 包名前缀有下划线：`_05_spring_web`
-- 核心模块，包含完整的 Spring Web 源码分析文档（12+ 篇）
+### sample05-spring-web 的特殊性
+- 核心模块，包名前缀有下划线：`_05_spring_web`
+- 包含完整的 Spring Web 源码分析文档（12+ 篇）
 
 ### 代码风格
 - 使用 Lombok 注解简化代码（`@Data`, `@Slf4j`, `@RequiredArgsConstructor`）

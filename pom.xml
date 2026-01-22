@@ -15,7 +15,7 @@
         <module>sample02-spring-security</module>
         <module>sample03-spring-reading</module>
         <module>sample04-spring-boot</module>
-        <module>05-spring-web</module>
+        <module>sample05-spring-web</module>
     </modules>
 
 </project>
