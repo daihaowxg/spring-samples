@@ -17,6 +17,7 @@
         <module>sample04-spring-boot</module>
         <module>sample05-spring-web</module>
         <module>sample06-jdk-features</module>
+        <module>sample07-config-dev</module>
     </modules>
 
 </project>
