@@ -11,10 +11,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class DemoBaseService implements DemoService {
     @Override
-    public Object doSomething() {
+    public String doSomething() {
         log.info("这里是默认的实现方法");
         beforeDoSomething();
-        Object result = doSomethingInternal();
+        String result = doSomethingInternal();
         afterDoSomething();
         return result;
     }
@@ -24,9 +24,9 @@ public class DemoBaseService implements DemoService {
 
     }
 
-    protected Object doSomethingInternal() {
+    protected String doSomethingInternal() {
         log.info("执行核心逻辑");
-        return "success";
+        return "base-success";
     }
 
     protected void beforeDoSomething() {

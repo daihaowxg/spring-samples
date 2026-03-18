@@ -12,18 +12,18 @@ public class SysFuncProcess {
     /**
      * 主键
      */
-    @TableId
+    @TableId("id")
     private String id;
 
     /**
      * 功能编号
      */
-    @TableField
+    @TableField("func_id")
     private String funcId;
 
     /**
-     * 实现类
+     * Spring Bean 名称
      */
-    @TableField
-    private String className;
+    @TableField("bean_name")
+    private String beanName;
 }

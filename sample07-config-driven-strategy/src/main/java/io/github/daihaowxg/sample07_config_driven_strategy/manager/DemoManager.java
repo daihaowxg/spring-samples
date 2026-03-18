@@ -1,46 +1,72 @@
 package io.github.daihaowxg.sample07_config_driven_strategy.manager;
 
 
-import cn.hutool.core.util.StrUtil;
-import cn.hutool.extra.spring.SpringUtil;
+import java.util.Map;
+
+import io.github.daihaowxg.sample07_config_driven_strategy.dto.DemoResult;
 import io.github.daihaowxg.sample07_config_driven_strategy.domain.SysFuncProcess;
 import io.github.daihaowxg.sample07_config_driven_strategy.helper.SysFuncProcessService;
 import io.github.daihaowxg.sample07_config_driven_strategy.service.DemoService;
-import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
 /**
  * 可以根据 funcId 动态切换实现
  */
 @Component
-@RequiredArgsConstructor
+@Slf4j
 public class DemoManager {
 
-    private SysFuncProcessService sysFuncProcessService;
+    private static final String DEFAULT_BEAN_NAME = "demoBaseService";
+
+    private final SysFuncProcessService sysFuncProcessService;
+
+    private final Map<String, DemoService> demoServiceRegistry;
+
+
+    public DemoManager(SysFuncProcessService sysFuncProcessService, Map<String, DemoService> demoServiceRegistry) {
+        this.sysFuncProcessService = sysFuncProcessService;
+        this.demoServiceRegistry = demoServiceRegistry;
+    }
 
 
     /**
      * 可以根据 funcId 动态切换实现
      *
      * @param funcId 功能编号
-     * @return something
+     * @return 执行结果
      */
-    public Object doSomething(String funcId) {
-        // 根据功能编号获取个性化实现
+    public DemoResult doSomething(String funcId) {
+        DemoService demoService = getDefaultDemoService();
+        String configuredBeanName = null;
+        String appliedBeanName = DEFAULT_BEAN_NAME;
+        boolean fallback = true;
+
         SysFuncProcess sysFuncProcess = sysFuncProcessService.getByFuncId(funcId);
-        if (sysFuncProcess != null) {
-            String className = sysFuncProcess.getClassName();
-            if (StrUtil.isNotBlank(className)) {
-                DemoService demoService = SpringUtil.getBean(className);
-                if (demoService != null) {
-                    return demoService.doSomething();
-                }
+        if (sysFuncProcess != null && StringUtils.hasText(sysFuncProcess.getBeanName())) {
+            configuredBeanName = sysFuncProcess.getBeanName();
+            DemoService configuredDemoService = demoServiceRegistry.get(configuredBeanName);
+            if (configuredDemoService != null) {
+                demoService = configuredDemoService;
+                appliedBeanName = configuredBeanName;
+                fallback = false;
+            } else {
+                log.warn("funcId={} 配置了不存在的 Bean: {}，将回退到默认实现", funcId, configuredBeanName);
             }
+        } else {
+            log.info("funcId={} 未命中个性化配置，使用默认实现", funcId);
         }
 
-        // 回退到默认的实现
-        DemoService demoService = SpringUtil.getBean("demoBaseService");
-        return demoService.doSomething();
+        return new DemoResult(funcId, configuredBeanName, appliedBeanName, fallback, demoService.doSomething());
     }
 
+
+    private DemoService getDefaultDemoService() {
+        DemoService demoService = demoServiceRegistry.get(DEFAULT_BEAN_NAME);
+        if (demoService == null) {
+            throw new IllegalStateException("未找到默认策略 Bean: " + DEFAULT_BEAN_NAME);
+        }
+        return demoService;
+    }
 }
