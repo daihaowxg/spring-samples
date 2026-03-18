@@ -1,8 +1,8 @@
-package io.github.daihaowxg.demo.helper;
+package io.github.daihaowxg.sample07_config_driven_strategy.helper;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.github.daihaowxg.demo.domain.SysFuncProcess;
+import io.github.daihaowxg.sample07_config_driven_strategy.domain.SysFuncProcess;
 import org.springframework.stereotype.Service;
 
 @Service

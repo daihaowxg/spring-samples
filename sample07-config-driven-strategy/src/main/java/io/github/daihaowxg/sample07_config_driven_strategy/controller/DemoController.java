@@ -1,6 +1,6 @@
-package io.github.daihaowxg.demo.controller;
+package io.github.daihaowxg.sample07_config_driven_strategy.controller;
 
-import io.github.daihaowxg.demo.manager.DemoManager;
+import io.github.daihaowxg.sample07_config_driven_strategy.manager.DemoManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

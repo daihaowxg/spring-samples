@@ -1,4 +1,4 @@
-package io.github.daihaowxg.demo.domain;
+package io.github.daihaowxg.sample07_config_driven_strategy.domain;
 
 
 import com.baomidou.mybatisplus.annotation.TableField;

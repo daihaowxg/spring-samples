@@ -1,6 +1,6 @@
-package io.github.daihaowxg.demo.service.impl;
+package io.github.daihaowxg.sample07_config_driven_strategy.service.impl;
 
-import io.github.daihaowxg.demo.service.DemoService;
+import io.github.daihaowxg.sample07_config_driven_strategy.service.DemoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

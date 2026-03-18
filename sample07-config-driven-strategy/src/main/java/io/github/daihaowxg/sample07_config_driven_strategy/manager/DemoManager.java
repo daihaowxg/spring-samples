@@ -1,11 +1,11 @@
-package io.github.daihaowxg.demo.manager;
+package io.github.daihaowxg.sample07_config_driven_strategy.manager;
 
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import io.github.daihaowxg.demo.domain.SysFuncProcess;
-import io.github.daihaowxg.demo.service.DemoService;
-import io.github.daihaowxg.demo.helper.SysFuncProcessService;
+import io.github.daihaowxg.sample07_config_driven_strategy.domain.SysFuncProcess;
+import io.github.daihaowxg.sample07_config_driven_strategy.helper.SysFuncProcessService;
+import io.github.daihaowxg.sample07_config_driven_strategy.service.DemoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
